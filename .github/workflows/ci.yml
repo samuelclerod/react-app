@@ -22,7 +22,7 @@ jobs:
           CI: true
 
       - name: Upload Coverage
-        uses: actions/upload-artifacts@v1
+        uses: actions/upload-artifact@v1
         with:
           name: code_coverage
           path: coverage
@@ -32,7 +32,7 @@ jobs:
         run: npm run build
 
       - name: Upload Build
-        uses: actions/upload-artifacts@v1
+        uses: actions/upload-artifact@v1
         with:
           name: build
           path: build
